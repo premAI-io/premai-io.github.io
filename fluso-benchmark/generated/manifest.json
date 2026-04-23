@@ -1,7 +1,7 @@
 {
   "releaseId": "release-20260422-previous-head2head",
   "benchmarkLabel": "Fluso Frontier Benchmark",
-  "generatedAt": "2026-04-23T01:50:28.274Z",
+  "generatedAt": "2026-04-23T20:15:06.178Z",
   "baselineModel": "glm51-openrouter",
   "preview": {
     "title": "Fluso Frontier Benchmark",
