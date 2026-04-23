@@ -1,0 +1,1823 @@
+{
+  "releaseId": "release-20260422-previous-head2head",
+  "benchmarkLabel": "Fluso Frontier Benchmark",
+  "generatedAt": "2026-04-23T01:50:28.274Z",
+  "baselineModel": "glm51-openrouter",
+  "preview": {
+    "title": "Fluso Frontier Benchmark",
+    "subtitle": "Historical five-model comparable release built from the previous clean head-to-head run set",
+    "status": "internal"
+  },
+  "headlineModels": [
+    {
+      "modelProfile": "glm51-openrouter",
+      "modelName": "GLM-5.1",
+      "lane": "headline",
+      "runStatus": "ready",
+      "runId": "20260421-012807-422",
+      "summaryPath": "/Users/suhanprabhu/Documents/premai/premapp-backend/agents/dev-harness/data/eval-glm51-head2head-20260421-012757/eval-results/run-20260421-012807-422/summary.json",
+      "benchmarkValidity": "valid",
+      "comparable": true,
+      "advisoryOnly": false,
+      "comparabilityWarnings": [],
+      "exclusionReasons": [],
+      "modelId": "z-ai/glm-5.1",
+      "provider": "openrouter",
+      "evalJudgeModel": "google/gemini-2.5-flash-lite:nitro",
+      "caseSetHash": "a46aed2fbbbc",
+      "scoringProfile": "outcome-v3",
+      "connectorTier": 2,
+      "harnessAdapter": "dev-harness",
+      "passRate": 0.6666666666666666,
+      "trustedPassRate": 0.7142857142857143,
+      "provisionalPassRate": 0.6491228070175439,
+      "totalCases": 78,
+      "totalCostUsd": 1.2486339899999999,
+      "actorTokens": 7211964,
+      "judgeTokens": 122219,
+      "totalToolCalls": 693,
+      "totalToolErrors": 45,
+      "averageTimeToFirstReplyMs": 47037.81578947369,
+      "averageWallTimeMs": 52429.6282051282,
+      "contaminationReasons": [],
+      "rootCauseBreakdown": {
+        "pass": 52,
+        "agent-behavior": 19,
+        "infra-runtime": 1,
+        "benchmark-verification": 4,
+        "completion-semantics": 2
+      },
+      "verifiedIssueBreakdown": {
+        "advice-not-execution": 10,
+        "stuck-loop": 8,
+        "state/judge-conflict": 2,
+        "no-response": 2,
+        "infra-unavailable": 1,
+        "completion-semantics": 2,
+        "hallucinated-success": 1,
+        "timeout": 1
+      },
+      "categoryBreakdown": [
+        {
+          "category": "chat",
+          "totalCases": 12,
+          "passed": 5,
+          "passRate": 0.4167,
+          "trustedCases": 1,
+          "trustedPassed": 0,
+          "trustedPassRate": 0,
+          "provisionalCases": 11,
+          "provisionalPassed": 5,
+          "provisionalPassRate": 0.45454545454545453
+        },
+        {
+          "category": "projects",
+          "totalCases": 6,
+          "passed": 3,
+          "passRate": 0.5,
+          "trustedCases": 2,
+          "trustedPassed": 1,
+          "trustedPassRate": 0.5,
+          "provisionalCases": 4,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "tasks",
+          "totalCases": 7,
+          "passed": 7,
+          "passRate": 1,
+          "trustedCases": 4,
+          "trustedPassed": 4,
+          "trustedPassRate": 1,
+          "provisionalCases": 3,
+          "provisionalPassed": 3,
+          "provisionalPassRate": 1
+        },
+        {
+          "category": "connectors",
+          "totalCases": 21,
+          "passed": 17,
+          "passRate": 0.8095,
+          "trustedCases": 11,
+          "trustedPassed": 9,
+          "trustedPassRate": 0.8181818181818182,
+          "provisionalCases": 10,
+          "provisionalPassed": 8,
+          "provisionalPassRate": 0.8
+        },
+        {
+          "category": "memory",
+          "totalCases": 4,
+          "passed": 1,
+          "passRate": 0.25,
+          "trustedCases": 3,
+          "trustedPassed": 1,
+          "trustedPassRate": 0.3333333333333333,
+          "provisionalCases": 1,
+          "provisionalPassed": 0,
+          "provisionalPassRate": 0
+        },
+        {
+          "category": "skills",
+          "totalCases": 2,
+          "passed": 2,
+          "passRate": 1,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 1
+        },
+        {
+          "category": "observability",
+          "totalCases": 4,
+          "passed": 2,
+          "passRate": 0.5,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 4,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "negative",
+          "totalCases": 2,
+          "passed": 2,
+          "passRate": 1,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 1
+        },
+        {
+          "category": "enriched",
+          "totalCases": 20,
+          "passed": 13,
+          "passRate": 0.65,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 20,
+          "provisionalPassed": 13,
+          "provisionalPassRate": 0.65
+        }
+      ]
+    },
+    {
+      "modelProfile": "kimi-k26",
+      "modelName": "Kimi K2.6",
+      "lane": "headline",
+      "runStatus": "ready",
+      "runId": "20260421-012531-129",
+      "summaryPath": "/Users/suhanprabhu/Documents/premai/premapp-backend/agents/dev-harness/data/eval-kimi-head2head-20260421-012526/eval-results/run-20260421-012531-129/summary.json",
+      "benchmarkValidity": "valid",
+      "comparable": true,
+      "advisoryOnly": false,
+      "comparabilityWarnings": [],
+      "exclusionReasons": [],
+      "modelId": "moonshotai/kimi-k2.6",
+      "provider": "openrouter",
+      "evalJudgeModel": "google/gemini-2.5-flash-lite:nitro",
+      "caseSetHash": "a46aed2fbbbc",
+      "scoringProfile": "outcome-v3",
+      "connectorTier": 2,
+      "harnessAdapter": "dev-harness",
+      "passRate": 0.6538461538461539,
+      "trustedPassRate": 0.7142857142857143,
+      "provisionalPassRate": 0.631578947368421,
+      "totalCases": 78,
+      "totalCostUsd": 0.66148419,
+      "actorTokens": 7750276,
+      "judgeTokens": 97027,
+      "totalToolCalls": 642,
+      "totalToolErrors": 63,
+      "averageTimeToFirstReplyMs": 30489.493333333332,
+      "averageWallTimeMs": 38360.02564102564,
+      "contaminationReasons": [],
+      "rootCauseBreakdown": {
+        "pass": 51,
+        "agent-behavior": 19,
+        "completion-semantics": 5,
+        "benchmark-verification": 3
+      },
+      "verifiedIssueBreakdown": {
+        "advice-not-execution": 11,
+        "stuck-loop": 9,
+        "completion-semantics": 5,
+        "wrong-feasibility": 1,
+        "state/judge-conflict": 2,
+        "no-response": 3
+      },
+      "categoryBreakdown": [
+        {
+          "category": "chat",
+          "totalCases": 12,
+          "passed": 8,
+          "passRate": 0.6667,
+          "trustedCases": 1,
+          "trustedPassed": 0,
+          "trustedPassRate": 0,
+          "provisionalCases": 11,
+          "provisionalPassed": 8,
+          "provisionalPassRate": 0.7272727272727273
+        },
+        {
+          "category": "projects",
+          "totalCases": 6,
+          "passed": 3,
+          "passRate": 0.5,
+          "trustedCases": 2,
+          "trustedPassed": 1,
+          "trustedPassRate": 0.5,
+          "provisionalCases": 4,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "tasks",
+          "totalCases": 7,
+          "passed": 5,
+          "passRate": 0.7143,
+          "trustedCases": 4,
+          "trustedPassed": 3,
+          "trustedPassRate": 0.75,
+          "provisionalCases": 3,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.6666666666666666
+        },
+        {
+          "category": "connectors",
+          "totalCases": 21,
+          "passed": 19,
+          "passRate": 0.9048,
+          "trustedCases": 11,
+          "trustedPassed": 10,
+          "trustedPassRate": 0.9090909090909091,
+          "provisionalCases": 10,
+          "provisionalPassed": 9,
+          "provisionalPassRate": 0.9
+        },
+        {
+          "category": "memory",
+          "totalCases": 4,
+          "passed": 1,
+          "passRate": 0.25,
+          "trustedCases": 3,
+          "trustedPassed": 1,
+          "trustedPassRate": 0.3333333333333333,
+          "provisionalCases": 1,
+          "provisionalPassed": 0,
+          "provisionalPassRate": 0
+        },
+        {
+          "category": "skills",
+          "totalCases": 2,
+          "passed": 1,
+          "passRate": 0.5,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 1,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "observability",
+          "totalCases": 4,
+          "passed": 1,
+          "passRate": 0.25,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 4,
+          "provisionalPassed": 1,
+          "provisionalPassRate": 0.25
+        },
+        {
+          "category": "negative",
+          "totalCases": 2,
+          "passed": 2,
+          "passRate": 1,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 1
+        },
+        {
+          "category": "enriched",
+          "totalCases": 20,
+          "passed": 11,
+          "passRate": 0.55,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 20,
+          "provisionalPassed": 11,
+          "provisionalPassRate": 0.55
+        }
+      ]
+    },
+    {
+      "modelProfile": "claude-sonnet-46",
+      "modelName": "Claude Sonnet 4.6",
+      "lane": "headline",
+      "runStatus": "ready",
+      "runId": "20260421-195020-206",
+      "summaryPath": "/Users/suhanprabhu/Documents/premai/premapp-backend/agents/dev-harness/data/eval-claude46-head2head-20260421-195015/eval-results/run-20260421-195020-206/summary.json",
+      "benchmarkValidity": "valid",
+      "comparable": true,
+      "advisoryOnly": false,
+      "comparabilityWarnings": [],
+      "exclusionReasons": [],
+      "modelId": "anthropic/claude-sonnet-4.6",
+      "provider": "openrouter",
+      "evalJudgeModel": "google/gemini-2.5-flash-lite:nitro",
+      "caseSetHash": "a46aed2fbbbc",
+      "scoringProfile": "outcome-v3",
+      "connectorTier": 2,
+      "harnessAdapter": "dev-harness",
+      "passRate": 0.6666666666666666,
+      "trustedPassRate": 0.6666666666666666,
+      "provisionalPassRate": 0.6666666666666666,
+      "totalCases": 78,
+      "totalCostUsd": 10.287101840000004,
+      "actorTokens": 6900527,
+      "judgeTokens": 101032,
+      "totalToolCalls": 427,
+      "totalToolErrors": 41,
+      "averageTimeToFirstReplyMs": 36020.246753246756,
+      "averageWallTimeMs": 40525.6282051282,
+      "contaminationReasons": [],
+      "rootCauseBreakdown": {
+        "pass": 52,
+        "agent-behavior": 21,
+        "completion-semantics": 2,
+        "mock-fixture": 1,
+        "benchmark-verification": 2
+      },
+      "verifiedIssueBreakdown": {
+        "state/judge-conflict": 2,
+        "advice-not-execution": 13,
+        "completion-semantics": 2,
+        "wrong-feasibility": 1,
+        "stuck-loop": 2,
+        "hallucinated-success": 1,
+        "no-response": 1
+      },
+      "categoryBreakdown": [
+        {
+          "category": "chat",
+          "totalCases": 12,
+          "passed": 6,
+          "passRate": 0.5,
+          "trustedCases": 1,
+          "trustedPassed": 0,
+          "trustedPassRate": 0,
+          "provisionalCases": 11,
+          "provisionalPassed": 6,
+          "provisionalPassRate": 0.5454545454545454
+        },
+        {
+          "category": "projects",
+          "totalCases": 6,
+          "passed": 4,
+          "passRate": 0.6667,
+          "trustedCases": 2,
+          "trustedPassed": 1,
+          "trustedPassRate": 0.5,
+          "provisionalCases": 4,
+          "provisionalPassed": 3,
+          "provisionalPassRate": 0.75
+        },
+        {
+          "category": "tasks",
+          "totalCases": 7,
+          "passed": 5,
+          "passRate": 0.7143,
+          "trustedCases": 4,
+          "trustedPassed": 3,
+          "trustedPassRate": 0.75,
+          "provisionalCases": 3,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.6666666666666666
+        },
+        {
+          "category": "connectors",
+          "totalCases": 21,
+          "passed": 19,
+          "passRate": 0.9048,
+          "trustedCases": 11,
+          "trustedPassed": 10,
+          "trustedPassRate": 0.9090909090909091,
+          "provisionalCases": 10,
+          "provisionalPassed": 9,
+          "provisionalPassRate": 0.9
+        },
+        {
+          "category": "memory",
+          "totalCases": 4,
+          "passed": 0,
+          "passRate": 0,
+          "trustedCases": 3,
+          "trustedPassed": 0,
+          "trustedPassRate": 0,
+          "provisionalCases": 1,
+          "provisionalPassed": 0,
+          "provisionalPassRate": 0
+        },
+        {
+          "category": "skills",
+          "totalCases": 2,
+          "passed": 2,
+          "passRate": 1,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 1
+        },
+        {
+          "category": "observability",
+          "totalCases": 4,
+          "passed": 2,
+          "passRate": 0.5,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 4,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "negative",
+          "totalCases": 2,
+          "passed": 2,
+          "passRate": 1,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 1
+        },
+        {
+          "category": "enriched",
+          "totalCases": 20,
+          "passed": 12,
+          "passRate": 0.6,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 20,
+          "provisionalPassed": 12,
+          "provisionalPassRate": 0.6
+        }
+      ]
+    },
+    {
+      "modelProfile": "gpt54",
+      "modelName": "GPT-5.4",
+      "lane": "headline",
+      "runStatus": "ready",
+      "runId": "20260422-130930-996",
+      "summaryPath": "/Users/suhanprabhu/Documents/premai/premapp-backend/agents/dev-harness/data/eval-gpt54-head2head-20260422-130251/eval-results/run-20260422-130930-996/summary.json",
+      "benchmarkValidity": "valid",
+      "comparable": true,
+      "advisoryOnly": false,
+      "comparabilityWarnings": [],
+      "exclusionReasons": [],
+      "modelId": "openai/gpt-5.4",
+      "provider": "openrouter",
+      "evalJudgeModel": "google/gemini-2.5-flash-lite:nitro",
+      "caseSetHash": "a46aed2fbbbc",
+      "scoringProfile": "outcome-v3",
+      "connectorTier": 2,
+      "harnessAdapter": "dev-harness",
+      "passRate": 0.5641025641025641,
+      "trustedPassRate": 0.47619047619047616,
+      "provisionalPassRate": 0.5964912280701754,
+      "totalCases": 78,
+      "totalCostUsd": 4.486030410000001,
+      "actorTokens": 8014521,
+      "judgeTokens": 111022,
+      "totalToolCalls": 583,
+      "totalToolErrors": 70,
+      "averageTimeToFirstReplyMs": 40407,
+      "averageWallTimeMs": 46422.42307692308,
+      "contaminationReasons": [],
+      "rootCauseBreakdown": {
+        "pass": 44,
+        "agent-behavior": 20,
+        "mock-fixture": 1,
+        "benchmark-verification": 9,
+        "infra-runtime": 2,
+        "completion-semantics": 2
+      },
+      "verifiedIssueBreakdown": {
+        "advice-not-execution": 15,
+        "stuck-loop": 4,
+        "wrong-feasibility": 1,
+        "state/judge-conflict": 1,
+        "hallucinated-success": 1,
+        "no-response": 3,
+        "infra-unavailable": 2,
+        "completion-semantics": 2
+      },
+      "categoryBreakdown": [
+        {
+          "category": "chat",
+          "totalCases": 12,
+          "passed": 5,
+          "passRate": 0.4167,
+          "trustedCases": 1,
+          "trustedPassed": 0,
+          "trustedPassRate": 0,
+          "provisionalCases": 11,
+          "provisionalPassed": 5,
+          "provisionalPassRate": 0.45454545454545453
+        },
+        {
+          "category": "projects",
+          "totalCases": 6,
+          "passed": 4,
+          "passRate": 0.6667,
+          "trustedCases": 2,
+          "trustedPassed": 1,
+          "trustedPassRate": 0.5,
+          "provisionalCases": 4,
+          "provisionalPassed": 3,
+          "provisionalPassRate": 0.75
+        },
+        {
+          "category": "tasks",
+          "totalCases": 7,
+          "passed": 5,
+          "passRate": 0.7143,
+          "trustedCases": 4,
+          "trustedPassed": 3,
+          "trustedPassRate": 0.75,
+          "provisionalCases": 3,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.6666666666666666
+        },
+        {
+          "category": "connectors",
+          "totalCases": 21,
+          "passed": 10,
+          "passRate": 0.4762,
+          "trustedCases": 11,
+          "trustedPassed": 5,
+          "trustedPassRate": 0.45454545454545453,
+          "provisionalCases": 10,
+          "provisionalPassed": 5,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "memory",
+          "totalCases": 4,
+          "passed": 1,
+          "passRate": 0.25,
+          "trustedCases": 3,
+          "trustedPassed": 1,
+          "trustedPassRate": 0.3333333333333333,
+          "provisionalCases": 1,
+          "provisionalPassed": 0,
+          "provisionalPassRate": 0
+        },
+        {
+          "category": "skills",
+          "totalCases": 2,
+          "passed": 1,
+          "passRate": 0.5,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 1,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "observability",
+          "totalCases": 4,
+          "passed": 2,
+          "passRate": 0.5,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 4,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "negative",
+          "totalCases": 2,
+          "passed": 2,
+          "passRate": 1,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 1
+        },
+        {
+          "category": "enriched",
+          "totalCases": 20,
+          "passed": 14,
+          "passRate": 0.7,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 20,
+          "provisionalPassed": 14,
+          "provisionalPassRate": 0.7
+        }
+      ]
+    },
+    {
+      "modelProfile": "gemini31-pro",
+      "modelName": "Gemini 3.1 Pro Preview",
+      "lane": "headline",
+      "runStatus": "ready",
+      "runId": "20260422-130930-997",
+      "summaryPath": "/Users/suhanprabhu/Documents/premai/premapp-backend/agents/dev-harness/data/eval-gemini31-head2head-20260422-130251/eval-results/run-20260422-130930-997/summary.json",
+      "benchmarkValidity": "valid",
+      "comparable": true,
+      "advisoryOnly": false,
+      "comparabilityWarnings": [],
+      "exclusionReasons": [],
+      "modelId": "google/gemini-3.1-pro-preview",
+      "provider": "openrouter",
+      "evalJudgeModel": "google/gemini-2.5-flash-lite:nitro",
+      "caseSetHash": "a46aed2fbbbc",
+      "scoringProfile": "outcome-v3",
+      "connectorTier": 2,
+      "harnessAdapter": "dev-harness",
+      "passRate": 0.6410256410256411,
+      "trustedPassRate": 0.6666666666666666,
+      "provisionalPassRate": 0.631578947368421,
+      "totalCases": 78,
+      "totalCostUsd": 5.885328669999998,
+      "actorTokens": 7727662,
+      "judgeTokens": 95126,
+      "totalToolCalls": 476,
+      "totalToolErrors": 84,
+      "averageTimeToFirstReplyMs": 39641.85897435898,
+      "averageWallTimeMs": 43979.98717948718,
+      "contaminationReasons": [],
+      "rootCauseBreakdown": {
+        "pass": 50,
+        "agent-behavior": 18,
+        "completion-semantics": 2,
+        "benchmark-verification": 7,
+        "infra-runtime": 1
+      },
+      "verifiedIssueBreakdown": {
+        "advice-not-execution": 14,
+        "completion-semantics": 2,
+        "stuck-loop": 4,
+        "state/judge-conflict": 2,
+        "infra-unavailable": 1
+      },
+      "categoryBreakdown": [
+        {
+          "category": "chat",
+          "totalCases": 12,
+          "passed": 6,
+          "passRate": 0.5,
+          "trustedCases": 1,
+          "trustedPassed": 0,
+          "trustedPassRate": 0,
+          "provisionalCases": 11,
+          "provisionalPassed": 6,
+          "provisionalPassRate": 0.5454545454545454
+        },
+        {
+          "category": "projects",
+          "totalCases": 6,
+          "passed": 3,
+          "passRate": 0.5,
+          "trustedCases": 2,
+          "trustedPassed": 1,
+          "trustedPassRate": 0.5,
+          "provisionalCases": 4,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "tasks",
+          "totalCases": 7,
+          "passed": 6,
+          "passRate": 0.8571,
+          "trustedCases": 4,
+          "trustedPassed": 3,
+          "trustedPassRate": 0.75,
+          "provisionalCases": 3,
+          "provisionalPassed": 3,
+          "provisionalPassRate": 1
+        },
+        {
+          "category": "connectors",
+          "totalCases": 21,
+          "passed": 17,
+          "passRate": 0.8095,
+          "trustedCases": 11,
+          "trustedPassed": 8,
+          "trustedPassRate": 0.7272727272727273,
+          "provisionalCases": 10,
+          "provisionalPassed": 9,
+          "provisionalPassRate": 0.9
+        },
+        {
+          "category": "memory",
+          "totalCases": 4,
+          "passed": 2,
+          "passRate": 0.5,
+          "trustedCases": 3,
+          "trustedPassed": 2,
+          "trustedPassRate": 0.6666666666666666,
+          "provisionalCases": 1,
+          "provisionalPassed": 0,
+          "provisionalPassRate": 0
+        },
+        {
+          "category": "skills",
+          "totalCases": 2,
+          "passed": 1,
+          "passRate": 0.5,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 1,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "observability",
+          "totalCases": 4,
+          "passed": 2,
+          "passRate": 0.5,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 4,
+          "provisionalPassed": 2,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "negative",
+          "totalCases": 2,
+          "passed": 1,
+          "passRate": 0.5,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 2,
+          "provisionalPassed": 1,
+          "provisionalPassRate": 0.5
+        },
+        {
+          "category": "enriched",
+          "totalCases": 20,
+          "passed": 12,
+          "passRate": 0.6,
+          "trustedCases": 0,
+          "trustedPassed": 0,
+          "provisionalCases": 20,
+          "provisionalPassed": 12,
+          "provisionalPassRate": 0.6
+        }
+      ]
+    }
+  ],
+  "appendixModels": [],
+  "comparisonDeltas": [
+    {
+      "modelProfile": "kimi-k26",
+      "baselineModelProfile": "glm51-openrouter",
+      "passRateDelta": -0.0128,
+      "trustedPassRateDelta": 0,
+      "provisionalPassRateDelta": -0.0175,
+      "costDeltaUsd": -0.5871,
+      "firstReplyLatencyDeltaMs": -16548.3,
+      "wallTimeDeltaMs": -14069.6,
+      "swingCases": [
+        {
+          "caseId": "atomic-obs-46",
+          "caseName": "Data source audit",
+          "category": "observability",
+          "baselineStatus": "stuck_loop",
+          "challengerStatus": "pass",
+          "baselineComposite": 0,
+          "challengerComposite": 0.8749999999999999,
+          "compositeDelta": 0.875,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-exa-53",
+          "caseName": "Research public sources with Exa",
+          "category": "connectors",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.2772727272727273,
+          "challengerComposite": 1,
+          "compositeDelta": 0.7227,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-obs-45",
+          "caseName": "Tasks completed this week",
+          "category": "observability",
+          "baselineStatus": "pass",
+          "challengerStatus": "fail",
+          "baselineComposite": 0.8749999999999999,
+          "challengerComposite": 0.25625,
+          "compositeDelta": -0.6187,
+          "rootCause": "agent-behavior"
+        },
+        {
+          "caseId": "atomic-neg-05",
+          "caseName": "GitHub no-results handling",
+          "category": "connectors",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.41666666666666663,
+          "challengerComposite": 1,
+          "compositeDelta": 0.5833,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-neg-06",
+          "caseName": "Calendar no-results handling",
+          "category": "connectors",
+          "baselineStatus": "pass",
+          "challengerStatus": "fail",
+          "baselineComposite": 1,
+          "challengerComposite": 0.41666666666666663,
+          "compositeDelta": -0.5833,
+          "rootCause": "benchmark-verification"
+        },
+        {
+          "caseId": "atomic-neg-07",
+          "caseName": "Exa no-results handling",
+          "category": "connectors",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.41666666666666663,
+          "challengerComposite": 1,
+          "compositeDelta": 0.5833,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-task-22",
+          "caseName": "Create task with metadata",
+          "category": "tasks",
+          "baselineStatus": "pass",
+          "challengerStatus": "stuck_loop",
+          "baselineComposite": 1,
+          "challengerComposite": 0.5714285714285714,
+          "compositeDelta": -0.4286,
+          "rootCause": "agent-behavior"
+        },
+        {
+          "caseId": "atomic-cross-52",
+          "caseName": "Draft with learned writing style",
+          "category": "chat",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.38125000000000003,
+          "challengerComposite": 0.79375,
+          "compositeDelta": 0.4125,
+          "rootCause": "pass"
+        }
+      ]
+    },
+    {
+      "modelProfile": "claude-sonnet-46",
+      "baselineModelProfile": "glm51-openrouter",
+      "passRateDelta": 0,
+      "trustedPassRateDelta": -0.0476,
+      "provisionalPassRateDelta": 0.0175,
+      "costDeltaUsd": 9.0385,
+      "firstReplyLatencyDeltaMs": -11017.6,
+      "wallTimeDeltaMs": -11904,
+      "swingCases": [
+        {
+          "caseId": "atomic-obs-46",
+          "caseName": "Data source audit",
+          "category": "observability",
+          "baselineStatus": "stuck_loop",
+          "challengerStatus": "pass",
+          "baselineComposite": 0,
+          "challengerComposite": 0.8749999999999999,
+          "compositeDelta": 0.875,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-exa-53",
+          "caseName": "Research public sources with Exa",
+          "category": "connectors",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.2772727272727273,
+          "challengerComposite": 1,
+          "compositeDelta": 0.7227,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-neg-05",
+          "caseName": "GitHub no-results handling",
+          "category": "connectors",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.41666666666666663,
+          "challengerComposite": 1,
+          "compositeDelta": 0.5833,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-mem-35",
+          "caseName": "Remember meeting platform preference",
+          "category": "memory",
+          "baselineStatus": "pass",
+          "challengerStatus": "fail",
+          "baselineComposite": 1,
+          "challengerComposite": 0.5238095238095238,
+          "compositeDelta": -0.4762,
+          "rootCause": "agent-behavior"
+        },
+        {
+          "caseId": "atomic-proj-01",
+          "caseName": "Create a new project",
+          "category": "projects",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.44285714285714284,
+          "challengerComposite": 0.8714285714285714,
+          "compositeDelta": 0.4286,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-task-22",
+          "caseName": "Create task with metadata",
+          "category": "tasks",
+          "baselineStatus": "pass",
+          "challengerStatus": "stuck_loop",
+          "baselineComposite": 1,
+          "challengerComposite": 0.5714285714285714,
+          "compositeDelta": -0.4286,
+          "rootCause": "agent-behavior"
+        },
+        {
+          "caseId": "atomic-chat-12",
+          "caseName": "Analyze spreadsheet",
+          "category": "chat",
+          "baselineStatus": "fail",
+          "challengerStatus": "fail",
+          "baselineComposite": 0.25,
+          "challengerComposite": 0.625,
+          "compositeDelta": 0.375,
+          "rootCause": "agent-behavior"
+        },
+        {
+          "caseId": "atomic-obs-47",
+          "caseName": "Token usage reporting",
+          "category": "observability",
+          "baselineStatus": "pass",
+          "challengerStatus": "fail",
+          "baselineComposite": 1,
+          "challengerComposite": 0.625,
+          "compositeDelta": -0.375,
+          "rootCause": "benchmark-verification"
+        }
+      ]
+    },
+    {
+      "modelProfile": "gpt54",
+      "baselineModelProfile": "glm51-openrouter",
+      "passRateDelta": -0.1026,
+      "trustedPassRateDelta": -0.2381,
+      "provisionalPassRateDelta": -0.0526,
+      "costDeltaUsd": 3.2374,
+      "firstReplyLatencyDeltaMs": -6630.8,
+      "wallTimeDeltaMs": -6007.2,
+      "swingCases": [
+        {
+          "caseId": "enriched-10",
+          "caseName": "Identify new org members",
+          "category": "enriched",
+          "baselineStatus": "pass",
+          "challengerStatus": "error",
+          "baselineComposite": 0.8875,
+          "challengerComposite": 0,
+          "compositeDelta": -0.8875,
+          "rootCause": "infra-runtime"
+        },
+        {
+          "caseId": "atomic-obs-46",
+          "caseName": "Data source audit",
+          "category": "observability",
+          "baselineStatus": "stuck_loop",
+          "challengerStatus": "pass",
+          "baselineComposite": 0,
+          "challengerComposite": 0.7999999999999998,
+          "compositeDelta": 0.8,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-cross-51",
+          "caseName": "Meeting prep with cross-connectors",
+          "category": "chat",
+          "baselineStatus": "fail",
+          "challengerStatus": "error",
+          "baselineComposite": 0.7727272727272726,
+          "challengerComposite": 0,
+          "compositeDelta": -0.7727,
+          "rootCause": "infra-runtime"
+        },
+        {
+          "caseId": "atomic-neg-04",
+          "caseName": "Gmail no-results handling",
+          "category": "connectors",
+          "baselineStatus": "pass",
+          "challengerStatus": "fail",
+          "baselineComposite": 1,
+          "challengerComposite": 0.24166666666666667,
+          "compositeDelta": -0.7583,
+          "rootCause": "benchmark-verification"
+        },
+        {
+          "caseId": "atomic-obs-45",
+          "caseName": "Tasks completed this week",
+          "category": "observability",
+          "baselineStatus": "pass",
+          "challengerStatus": "fail",
+          "baselineComposite": 0.8749999999999999,
+          "challengerComposite": 0.21874999999999997,
+          "compositeDelta": -0.6562,
+          "rootCause": "agent-behavior"
+        },
+        {
+          "caseId": "atomic-recover-05",
+          "caseName": "GitHub unavailable recovery",
+          "category": "connectors",
+          "baselineStatus": "pass",
+          "challengerStatus": "fail",
+          "baselineComposite": 1,
+          "challengerComposite": 0.4416666666666666,
+          "compositeDelta": -0.5583,
+          "rootCause": "benchmark-verification"
+        },
+        {
+          "caseId": "atomic-proj-01",
+          "caseName": "Create a new project",
+          "category": "projects",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.44285714285714284,
+          "challengerComposite": 1,
+          "compositeDelta": 0.5571,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "enriched-07",
+          "caseName": "Parse resumes from Slack",
+          "category": "enriched",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.44285714285714284,
+          "challengerComposite": 1,
+          "compositeDelta": 0.5571,
+          "rootCause": "pass"
+        }
+      ]
+    },
+    {
+      "modelProfile": "gemini31-pro",
+      "baselineModelProfile": "glm51-openrouter",
+      "passRateDelta": -0.0256,
+      "trustedPassRateDelta": -0.0476,
+      "provisionalPassRateDelta": -0.0175,
+      "costDeltaUsd": 4.6367,
+      "firstReplyLatencyDeltaMs": -7396,
+      "wallTimeDeltaMs": -8449.6,
+      "swingCases": [
+        {
+          "caseId": "enriched-24",
+          "caseName": "Extract quotes from interview",
+          "category": "enriched",
+          "baselineStatus": "timeout",
+          "challengerStatus": "pass",
+          "baselineComposite": 0,
+          "challengerComposite": 1,
+          "compositeDelta": 1,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-obs-46",
+          "caseName": "Data source audit",
+          "category": "observability",
+          "baselineStatus": "stuck_loop",
+          "challengerStatus": "pass",
+          "baselineComposite": 0,
+          "challengerComposite": 0.8749999999999999,
+          "compositeDelta": 0.875,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-cross-49",
+          "caseName": "Summarize uploaded document",
+          "category": "chat",
+          "baselineStatus": "stuck_loop",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.125,
+          "challengerComposite": 0.8749999999999999,
+          "compositeDelta": 0.75,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-neg-05",
+          "caseName": "GitHub no-results handling",
+          "category": "connectors",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.41666666666666663,
+          "challengerComposite": 1,
+          "compositeDelta": 0.5833,
+          "rootCause": "pass"
+        },
+        {
+          "caseId": "atomic-neg-06",
+          "caseName": "Calendar no-results handling",
+          "category": "connectors",
+          "baselineStatus": "pass",
+          "challengerStatus": "fail",
+          "baselineComposite": 1,
+          "challengerComposite": 0.41666666666666663,
+          "compositeDelta": -0.5833,
+          "rootCause": "benchmark-verification"
+        },
+        {
+          "caseId": "atomic-obs-44",
+          "caseName": "View action trace",
+          "category": "observability",
+          "baselineStatus": "stuck_loop",
+          "challengerStatus": "stuck_loop",
+          "baselineComposite": 0.6714285714285714,
+          "challengerComposite": 0.1357142857142857,
+          "compositeDelta": -0.5357,
+          "rootCause": "agent-behavior"
+        },
+        {
+          "caseId": "atomic-exa-53",
+          "caseName": "Research public sources with Exa",
+          "category": "connectors",
+          "baselineStatus": "fail",
+          "challengerStatus": "fail",
+          "baselineComposite": 0.2772727272727273,
+          "challengerComposite": 0.7454545454545455,
+          "compositeDelta": 0.4682,
+          "rootCause": "benchmark-verification"
+        },
+        {
+          "caseId": "atomic-mem-37",
+          "caseName": "Forget project context",
+          "category": "memory",
+          "baselineStatus": "fail",
+          "challengerStatus": "pass",
+          "baselineComposite": 0.49761904761904757,
+          "challengerComposite": 0.9523809523809522,
+          "compositeDelta": 0.4548,
+          "rootCause": "pass"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "headline": {
+      "modelsCompared": 5,
+      "totalModelCases": 390,
+      "totalPasses": 249,
+      "overallPassRate": 0.6385,
+      "overallTrustedPassRate": 0.6476190476190476,
+      "overallProvisionalPassRate": 0.6350877192982456,
+      "totalCostUsd": 22.5686,
+      "totalActorTokens": 37604950,
+      "totalJudgeTokens": 526426,
+      "totalToolCalls": 2821,
+      "totalToolErrors": 303,
+      "averageTimeToFirstReplyMs": 38719.3,
+      "averageWallTimeMs": 44343.5
+    },
+    "appendixCount": 0
+  },
+  "rootCauseBreakdown": {
+    "pass": 249,
+    "agent-behavior": 97,
+    "infra-runtime": 4,
+    "benchmark-verification": 25,
+    "completion-semantics": 13,
+    "mock-fixture": 2
+  },
+  "issueBreakdown": {
+    "advice-not-execution": 63,
+    "stuck-loop": 27,
+    "state/judge-conflict": 9,
+    "no-response": 9,
+    "infra-unavailable": 4,
+    "completion-semantics": 13,
+    "hallucinated-success": 3,
+    "timeout": 1,
+    "wrong-feasibility": 3
+  },
+  "categoryMatrix": {
+    "chat": [
+      {
+        "category": "chat",
+        "totalCases": 12,
+        "passed": 5,
+        "passRate": 0.4167,
+        "trustedCases": 1,
+        "trustedPassed": 0,
+        "trustedPassRate": 0,
+        "provisionalCases": 11,
+        "provisionalPassed": 5,
+        "provisionalPassRate": 0.45454545454545453
+      },
+      {
+        "category": "chat",
+        "totalCases": 12,
+        "passed": 8,
+        "passRate": 0.6667,
+        "trustedCases": 1,
+        "trustedPassed": 0,
+        "trustedPassRate": 0,
+        "provisionalCases": 11,
+        "provisionalPassed": 8,
+        "provisionalPassRate": 0.7272727272727273
+      },
+      {
+        "category": "chat",
+        "totalCases": 12,
+        "passed": 6,
+        "passRate": 0.5,
+        "trustedCases": 1,
+        "trustedPassed": 0,
+        "trustedPassRate": 0,
+        "provisionalCases": 11,
+        "provisionalPassed": 6,
+        "provisionalPassRate": 0.5454545454545454
+      },
+      {
+        "category": "chat",
+        "totalCases": 12,
+        "passed": 5,
+        "passRate": 0.4167,
+        "trustedCases": 1,
+        "trustedPassed": 0,
+        "trustedPassRate": 0,
+        "provisionalCases": 11,
+        "provisionalPassed": 5,
+        "provisionalPassRate": 0.45454545454545453
+      },
+      {
+        "category": "chat",
+        "totalCases": 12,
+        "passed": 6,
+        "passRate": 0.5,
+        "trustedCases": 1,
+        "trustedPassed": 0,
+        "trustedPassRate": 0,
+        "provisionalCases": 11,
+        "provisionalPassed": 6,
+        "provisionalPassRate": 0.5454545454545454
+      }
+    ],
+    "projects": [
+      {
+        "category": "projects",
+        "totalCases": 6,
+        "passed": 3,
+        "passRate": 0.5,
+        "trustedCases": 2,
+        "trustedPassed": 1,
+        "trustedPassRate": 0.5,
+        "provisionalCases": 4,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.5
+      },
+      {
+        "category": "projects",
+        "totalCases": 6,
+        "passed": 3,
+        "passRate": 0.5,
+        "trustedCases": 2,
+        "trustedPassed": 1,
+        "trustedPassRate": 0.5,
+        "provisionalCases": 4,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.5
+      },
+      {
+        "category": "projects",
+        "totalCases": 6,
+        "passed": 4,
+        "passRate": 0.6667,
+        "trustedCases": 2,
+        "trustedPassed": 1,
+        "trustedPassRate": 0.5,
+        "provisionalCases": 4,
+        "provisionalPassed": 3,
+        "provisionalPassRate": 0.75
+      },
+      {
+        "category": "projects",
+        "totalCases": 6,
+        "passed": 4,
+        "passRate": 0.6667,
+        "trustedCases": 2,
+        "trustedPassed": 1,
+        "trustedPassRate": 0.5,
+        "provisionalCases": 4,
+        "provisionalPassed": 3,
+        "provisionalPassRate": 0.75
+      },
+      {
+        "category": "projects",
+        "totalCases": 6,
+        "passed": 3,
+        "passRate": 0.5,
+        "trustedCases": 2,
+        "trustedPassed": 1,
+        "trustedPassRate": 0.5,
+        "provisionalCases": 4,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.5
+      }
+    ],
+    "tasks": [
+      {
+        "category": "tasks",
+        "totalCases": 7,
+        "passed": 7,
+        "passRate": 1,
+        "trustedCases": 4,
+        "trustedPassed": 4,
+        "trustedPassRate": 1,
+        "provisionalCases": 3,
+        "provisionalPassed": 3,
+        "provisionalPassRate": 1
+      },
+      {
+        "category": "tasks",
+        "totalCases": 7,
+        "passed": 5,
+        "passRate": 0.7143,
+        "trustedCases": 4,
+        "trustedPassed": 3,
+        "trustedPassRate": 0.75,
+        "provisionalCases": 3,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.6666666666666666
+      },
+      {
+        "category": "tasks",
+        "totalCases": 7,
+        "passed": 5,
+        "passRate": 0.7143,
+        "trustedCases": 4,
+        "trustedPassed": 3,
+        "trustedPassRate": 0.75,
+        "provisionalCases": 3,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.6666666666666666
+      },
+      {
+        "category": "tasks",
+        "totalCases": 7,
+        "passed": 5,
+        "passRate": 0.7143,
+        "trustedCases": 4,
+        "trustedPassed": 3,
+        "trustedPassRate": 0.75,
+        "provisionalCases": 3,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.6666666666666666
+      },
+      {
+        "category": "tasks",
+        "totalCases": 7,
+        "passed": 6,
+        "passRate": 0.8571,
+        "trustedCases": 4,
+        "trustedPassed": 3,
+        "trustedPassRate": 0.75,
+        "provisionalCases": 3,
+        "provisionalPassed": 3,
+        "provisionalPassRate": 1
+      }
+    ],
+    "connectors": [
+      {
+        "category": "connectors",
+        "totalCases": 21,
+        "passed": 17,
+        "passRate": 0.8095,
+        "trustedCases": 11,
+        "trustedPassed": 9,
+        "trustedPassRate": 0.8181818181818182,
+        "provisionalCases": 10,
+        "provisionalPassed": 8,
+        "provisionalPassRate": 0.8
+      },
+      {
+        "category": "connectors",
+        "totalCases": 21,
+        "passed": 19,
+        "passRate": 0.9048,
+        "trustedCases": 11,
+        "trustedPassed": 10,
+        "trustedPassRate": 0.9090909090909091,
+        "provisionalCases": 10,
+        "provisionalPassed": 9,
+        "provisionalPassRate": 0.9
+      },
+      {
+        "category": "connectors",
+        "totalCases": 21,
+        "passed": 19,
+        "passRate": 0.9048,
+        "trustedCases": 11,
+        "trustedPassed": 10,
+        "trustedPassRate": 0.9090909090909091,
+        "provisionalCases": 10,
+        "provisionalPassed": 9,
+        "provisionalPassRate": 0.9
+      },
+      {
+        "category": "connectors",
+        "totalCases": 21,
+        "passed": 10,
+        "passRate": 0.4762,
+        "trustedCases": 11,
+        "trustedPassed": 5,
+        "trustedPassRate": 0.45454545454545453,
+        "provisionalCases": 10,
+        "provisionalPassed": 5,
+        "provisionalPassRate": 0.5
+      },
+      {
+        "category": "connectors",
+        "totalCases": 21,
+        "passed": 17,
+        "passRate": 0.8095,
+        "trustedCases": 11,
+        "trustedPassed": 8,
+        "trustedPassRate": 0.7272727272727273,
+        "provisionalCases": 10,
+        "provisionalPassed": 9,
+        "provisionalPassRate": 0.9
+      }
+    ],
+    "memory": [
+      {
+        "category": "memory",
+        "totalCases": 4,
+        "passed": 1,
+        "passRate": 0.25,
+        "trustedCases": 3,
+        "trustedPassed": 1,
+        "trustedPassRate": 0.3333333333333333,
+        "provisionalCases": 1,
+        "provisionalPassed": 0,
+        "provisionalPassRate": 0
+      },
+      {
+        "category": "memory",
+        "totalCases": 4,
+        "passed": 1,
+        "passRate": 0.25,
+        "trustedCases": 3,
+        "trustedPassed": 1,
+        "trustedPassRate": 0.3333333333333333,
+        "provisionalCases": 1,
+        "provisionalPassed": 0,
+        "provisionalPassRate": 0
+      },
+      {
+        "category": "memory",
+        "totalCases": 4,
+        "passed": 0,
+        "passRate": 0,
+        "trustedCases": 3,
+        "trustedPassed": 0,
+        "trustedPassRate": 0,
+        "provisionalCases": 1,
+        "provisionalPassed": 0,
+        "provisionalPassRate": 0
+      },
+      {
+        "category": "memory",
+        "totalCases": 4,
+        "passed": 1,
+        "passRate": 0.25,
+        "trustedCases": 3,
+        "trustedPassed": 1,
+        "trustedPassRate": 0.3333333333333333,
+        "provisionalCases": 1,
+        "provisionalPassed": 0,
+        "provisionalPassRate": 0
+      },
+      {
+        "category": "memory",
+        "totalCases": 4,
+        "passed": 2,
+        "passRate": 0.5,
+        "trustedCases": 3,
+        "trustedPassed": 2,
+        "trustedPassRate": 0.6666666666666666,
+        "provisionalCases": 1,
+        "provisionalPassed": 0,
+        "provisionalPassRate": 0
+      }
+    ],
+    "skills": [
+      {
+        "category": "skills",
+        "totalCases": 2,
+        "passed": 2,
+        "passRate": 1,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 1
+      },
+      {
+        "category": "skills",
+        "totalCases": 2,
+        "passed": 1,
+        "passRate": 0.5,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 1,
+        "provisionalPassRate": 0.5
+      },
+      {
+        "category": "skills",
+        "totalCases": 2,
+        "passed": 2,
+        "passRate": 1,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 1
+      },
+      {
+        "category": "skills",
+        "totalCases": 2,
+        "passed": 1,
+        "passRate": 0.5,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 1,
+        "provisionalPassRate": 0.5
+      },
+      {
+        "category": "skills",
+        "totalCases": 2,
+        "passed": 1,
+        "passRate": 0.5,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 1,
+        "provisionalPassRate": 0.5
+      }
+    ],
+    "observability": [
+      {
+        "category": "observability",
+        "totalCases": 4,
+        "passed": 2,
+        "passRate": 0.5,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 4,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.5
+      },
+      {
+        "category": "observability",
+        "totalCases": 4,
+        "passed": 1,
+        "passRate": 0.25,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 4,
+        "provisionalPassed": 1,
+        "provisionalPassRate": 0.25
+      },
+      {
+        "category": "observability",
+        "totalCases": 4,
+        "passed": 2,
+        "passRate": 0.5,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 4,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.5
+      },
+      {
+        "category": "observability",
+        "totalCases": 4,
+        "passed": 2,
+        "passRate": 0.5,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 4,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.5
+      },
+      {
+        "category": "observability",
+        "totalCases": 4,
+        "passed": 2,
+        "passRate": 0.5,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 4,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 0.5
+      }
+    ],
+    "negative": [
+      {
+        "category": "negative",
+        "totalCases": 2,
+        "passed": 2,
+        "passRate": 1,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 1
+      },
+      {
+        "category": "negative",
+        "totalCases": 2,
+        "passed": 2,
+        "passRate": 1,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 1
+      },
+      {
+        "category": "negative",
+        "totalCases": 2,
+        "passed": 2,
+        "passRate": 1,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 1
+      },
+      {
+        "category": "negative",
+        "totalCases": 2,
+        "passed": 2,
+        "passRate": 1,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 2,
+        "provisionalPassRate": 1
+      },
+      {
+        "category": "negative",
+        "totalCases": 2,
+        "passed": 1,
+        "passRate": 0.5,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 2,
+        "provisionalPassed": 1,
+        "provisionalPassRate": 0.5
+      }
+    ],
+    "enriched": [
+      {
+        "category": "enriched",
+        "totalCases": 20,
+        "passed": 13,
+        "passRate": 0.65,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 20,
+        "provisionalPassed": 13,
+        "provisionalPassRate": 0.65
+      },
+      {
+        "category": "enriched",
+        "totalCases": 20,
+        "passed": 11,
+        "passRate": 0.55,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 20,
+        "provisionalPassed": 11,
+        "provisionalPassRate": 0.55
+      },
+      {
+        "category": "enriched",
+        "totalCases": 20,
+        "passed": 12,
+        "passRate": 0.6,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 20,
+        "provisionalPassed": 12,
+        "provisionalPassRate": 0.6
+      },
+      {
+        "category": "enriched",
+        "totalCases": 20,
+        "passed": 14,
+        "passRate": 0.7,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 20,
+        "provisionalPassed": 14,
+        "provisionalPassRate": 0.7
+      },
+      {
+        "category": "enriched",
+        "totalCases": 20,
+        "passed": 12,
+        "passRate": 0.6,
+        "trustedCases": 0,
+        "trustedPassed": 0,
+        "provisionalCases": 20,
+        "provisionalPassed": 12,
+        "provisionalPassRate": 0.6
+      }
+    ]
+  },
+  "review": {
+    "publishable": true,
+    "blockers": [],
+    "warnings": [],
+    "notes": [
+      "Headline charts and claims are derived strictly from the clean comparable set."
+    ]
+  },
+  "publishable": true,
+  "insights": [
+    {
+      "id": "headline-pass-leader",
+      "claim": "GLM-5.1 leads the current comparable headline set on overall pass rate.",
+      "evidenceSource": [
+        "manifest.headlineModels.glm51-openrouter.passRate"
+      ],
+      "evidenceGrade": "strong",
+      "supportingMetrics": [
+        "pass_rate=0.6666666666666666"
+      ],
+      "allowedSurface": "publishable"
+    },
+    {
+      "id": "cost-vs-quality",
+      "claim": "Kimi K2.6 is the lowest-cost clean run, but GLM-5.1 still leads the release on overall task completion.",
+      "evidenceSource": [
+        "manifest.headlineModels.kimi-k26.totalCostUsd",
+        "manifest.headlineModels.glm51-openrouter.passRate"
+      ],
+      "evidenceGrade": "strong",
+      "supportingMetrics": [
+        "lowest_cost_usd=0.66148419",
+        "best_pass_rate=0.6666666666666666"
+      ],
+      "allowedSurface": "publishable"
+    },
+    {
+      "id": "latency-leader",
+      "claim": "Kimi K2.6 reaches a first user-visible reply faster than the rest of the clean set, but fastest does not automatically mean highest completion.",
+      "evidenceSource": [
+        "manifest.headlineModels.kimi-k26.averageTimeToFirstReplyMs"
+      ],
+      "evidenceGrade": "medium",
+      "supportingMetrics": [
+        "first_reply_ms=30489.493333333332"
+      ],
+      "allowedSurface": "publishable"
+    },
+    {
+      "id": "category-separation",
+      "claim": "Memory behavior is the task family where the current models separate most clearly in this release.",
+      "evidenceSource": [
+        "manifest.categoryMatrix.memory"
+      ],
+      "evidenceGrade": "medium",
+      "supportingMetrics": [
+        "pass_rate_range=0.5"
+      ],
+      "allowedSurface": "publishable"
+    }
+  ]
+}

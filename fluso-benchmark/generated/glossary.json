@@ -1,0 +1,74 @@
+[
+  {
+    "id": "benchmark-valid-run",
+    "term": "Benchmark-valid run",
+    "shortDefinition": "A run that passed the fairness checks and is safe to include in the clean comparison set.",
+    "longDefinition": "A benchmark-valid run is one that finished without invalidating contamination and matched the release rules for case set, scoring profile, connector tier, harness contract, and fixed judge configuration.",
+    "whyItMatters": "This keeps the leaderboard from mixing fair comparisons with broken or partial runs.",
+    "category": "fairness",
+    "surface": "public"
+  },
+  {
+    "id": "comparable-set",
+    "term": "Comparable set",
+    "shortDefinition": "The models that can be compared side by side without changing the benchmark rules midstream.",
+    "longDefinition": "The comparable set is the subset of runs that share the same case universe, scoring profile, connector tier, harness adapter, and evaluation judge. If one of those shifts, the run moves out of the main leaderboard.",
+    "whyItMatters": "Without a comparable set, a leaderboard can look rigorous while quietly comparing different experiments.",
+    "category": "fairness",
+    "surface": "public"
+  },
+  {
+    "id": "contamination",
+    "term": "Contamination",
+    "shortDefinition": "A run condition that makes the result unfair or unreliable for headline reporting.",
+    "longDefinition": "Contamination covers problems like exhausted provider quota, broken prerequisites, or session corruption that can change the score for reasons unrelated to the model itself.",
+    "whyItMatters": "The site keeps contaminated runs visible in diagnostics so they do not vanish, but they never count toward the headline ranking.",
+    "category": "diagnostics",
+    "surface": "public"
+  },
+  {
+    "id": "completion-semantics",
+    "term": "Completion-semantics failure",
+    "shortDefinition": "The model did useful work but failed to actually finish the task in the way the user needed.",
+    "longDefinition": "These failures happen when the model gathers the right information or writes the right artifact, but still stops with an unnecessary follow-up question, an open loop, or an incomplete handoff instead of closing the task cleanly.",
+    "whyItMatters": "This benchmark is about useful knowledge work, so it tracks whether the job was truly completed, not just partially attempted.",
+    "category": "diagnostics",
+    "surface": "public"
+  },
+  {
+    "id": "tool-use-failure",
+    "term": "Tool-use failure",
+    "shortDefinition": "A case where the model could not successfully call or use the tool path the task required.",
+    "longDefinition": "Tool-use failures include calling the wrong function, failing to execute the tool, or not using the returned result correctly in the final answer.",
+    "whyItMatters": "Knowledge-work agents often succeed or fail based on how faithfully they interact with systems, not just how well they write prose.",
+    "category": "diagnostics",
+    "surface": "public"
+  },
+  {
+    "id": "task-family",
+    "term": "Task family",
+    "shortDefinition": "A group of benchmark cases that test a similar kind of work, such as connectors, memory, or observability.",
+    "longDefinition": "Task families let readers see where a model is strong or weak by work type instead of collapsing everything into one headline number.",
+    "whyItMatters": "Most real model differences show up in the shape of performance across work types, not only in one average score.",
+    "category": "dataset",
+    "surface": "public"
+  },
+  {
+    "id": "workbook",
+    "term": "Workbook",
+    "shortDefinition": "The downloadable case ledger where each row is one model scored on one benchmark case.",
+    "longDefinition": "The workbook is the audit surface behind the benchmark. It records case identity, outcome, root cause, tool usage, token usage, latency, and contamination status for each model-case result.",
+    "whyItMatters": "It gives reviewers a way to inspect the benchmark at case level instead of relying only on a summary page.",
+    "category": "artifacts",
+    "surface": "public"
+  },
+  {
+    "id": "connector-tier",
+    "term": "Connector tier",
+    "shortDefinition": "A coarse indicator of how much external-system complexity a case expects.",
+    "longDefinition": "Lower connector tiers stay closer to local harness behavior, while higher tiers rely more on connector-style flows and live prerequisites. The current release keeps a fixed connector tier so model runs stay comparable.",
+    "whyItMatters": "Changing the tier changes the task shape, so it has to stay fixed inside one fair release.",
+    "category": "dataset",
+    "surface": "public"
+  }
+]
