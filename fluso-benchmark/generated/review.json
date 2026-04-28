@@ -1,7 +1,11 @@
 {
   "publishable": true,
   "blockers": [],
-  "warnings": [],
+  "warnings": [
+    "glm51-openrouter reported non-invalidating contamination: quality gate: stuck-loop count 4 exceeds gate 3",
+    "claude-sonnet-46 reported non-invalidating contamination: quality gate: no-reply rate 2.6% exceeds gate 2.0% (2/78)",
+    "deepseek-v4-pro reported non-invalidating contamination: quality gate: timeout rate 7.7% exceeds gate 5.0% (6/78); quality gate: no-reply rate 2.6% exceeds gate 2.0% (2/78)"
+  ],
   "notes": [
     "Headline charts and claims are derived strictly from the clean comparable set."
   ]

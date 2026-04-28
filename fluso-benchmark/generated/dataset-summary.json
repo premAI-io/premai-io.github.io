@@ -260,7 +260,7 @@
     {
       "id": "artifact-checks",
       "label": "Cases with artifact checks",
-      "count": 24,
+      "count": 26,
       "description": "These cases inspect generated files or structured outputs instead of only reading the final reply."
     },
     {
