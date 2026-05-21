@@ -2,7 +2,7 @@
   {
     "id": "benchmark-valid-run",
     "term": "Benchmark-valid run",
-    "shortDefinition": "A run that passed the fairness checks and is safe to include in the clean comparison set.",
+    "shortDefinition": "A run that passed the fairness checks and is safe to include in the comparable release set.",
     "longDefinition": "A benchmark-valid run is one that finished without invalidating contamination and matched the release rules for case set, scoring profile, connector tier, harness contract, and fixed judge configuration.",
     "whyItMatters": "This keeps the leaderboard from mixing fair comparisons with broken or partial runs.",
     "category": "fairness",

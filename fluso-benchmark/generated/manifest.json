@@ -1,22 +1,23 @@
 {
   "releaseId": "release-20260428-six-fairness",
-  "benchmarkLabel": "Fluso Frontier Benchmark",
-  "generatedAt": "2026-04-28T18:30:14.966Z",
+  "benchmarkLabel": "Fluso Dev-Harness Tier 2 Benchmark",
+  "generatedAt": "2026-05-21T16:28:55.603Z",
   "baselineModel": "glm51-openrouter",
   "preview": {
-    "title": "Fluso Frontier Benchmark",
-    "subtitle": "Six-model head-to-head with apples-to-apples retry treatment",
-    "status": "release"
+    "title": "Fluso Dev-Harness Tier 2 Benchmark",
+    "subtitle": "Internal six-model Tier 2 release from one comparable dev-harness case set. Read overall, trusted, and provisional pass rates together.",
+    "status": "internal"
   },
   "headlineModels": [
     {
       "modelProfile": "glm51-openrouter",
-      "modelName": "GLM 5.1",
+      "modelName": "GLM-5.1",
+      "thinkingLevel": "low",
       "lane": "headline",
       "runStatus": "ready",
       "runId": "20260427-153347-667",
-      "summaryPath": "/tmp/fluso-bench-synth/summaries/glm51-openrouter.summary.json",
-      "benchmarkValidity": "valid",
+      "summaryPath": "agents/dev-harness/data/hardened-rerun-20260427/glm51-openrouter/eval-results/run-20260427-153347-667/summary.json",
+      "benchmarkValidity": "invalid",
       "comparable": true,
       "advisoryOnly": false,
       "comparabilityWarnings": [],
@@ -39,6 +40,15 @@
       "totalToolErrors": 55,
       "averageTimeToFirstReplyMs": 71709.35064935064,
       "averageWallTimeMs": 79650.47435897436,
+      "failureModeSummary": {
+        "regularFails": 11,
+        "stuckLoops": 4,
+        "timeoutClass": 3
+      },
+      "wallTimePercentilesMs": {
+        "p50": 43400,
+        "p95": 322100
+      },
       "contaminationReasons": [
         "quality gate: stuck-loop count 4 exceeds gate 3"
       ],
@@ -166,10 +176,11 @@
     {
       "modelProfile": "kimi-k26",
       "modelName": "Kimi K2.6",
+      "thinkingLevel": "off",
       "lane": "headline",
       "runStatus": "ready",
       "runId": "20260427-155756-846",
-      "summaryPath": "/tmp/fluso-bench-synth/summaries/kimi-k26.summary.json",
+      "summaryPath": "agents/dev-harness/data/hardened-rerun-20260427/kimi-k26/eval-results/run-20260427-155756-846/summary.json",
       "benchmarkValidity": "valid",
       "comparable": true,
       "advisoryOnly": false,
@@ -193,6 +204,15 @@
       "totalToolErrors": 63,
       "averageTimeToFirstReplyMs": 54531.844155844155,
       "averageWallTimeMs": 60614.833333333336,
+      "failureModeSummary": {
+        "regularFails": 16,
+        "stuckLoops": 3,
+        "timeoutClass": 3
+      },
+      "wallTimePercentilesMs": {
+        "p50": 33400,
+        "p95": 214200
+      },
       "contaminationReasons": [],
       "rootCauseBreakdown": {
         "pass": 59,
@@ -315,11 +335,12 @@
     {
       "modelProfile": "claude-sonnet-46",
       "modelName": "Claude Sonnet 4.6",
+      "thinkingLevel": "low",
       "lane": "headline",
       "runStatus": "ready",
       "runId": "20260427-190936-556",
-      "summaryPath": "/tmp/fluso-bench-synth/summaries/claude-sonnet-46.summary.json",
-      "benchmarkValidity": "valid",
+      "summaryPath": "agents/dev-harness/data/hardened-rerun-20260427/claude-sonnet-46/eval-results/run-20260427-190936-556/summary.json",
+      "benchmarkValidity": "invalid",
       "comparable": true,
       "advisoryOnly": false,
       "comparabilityWarnings": [],
@@ -342,6 +363,15 @@
       "totalToolErrors": 39,
       "averageTimeToFirstReplyMs": 32964.25,
       "averageWallTimeMs": 35987.0641025641,
+      "failureModeSummary": {
+        "regularFails": 14,
+        "stuckLoops": 2,
+        "timeoutClass": 1
+      },
+      "wallTimePercentilesMs": {
+        "p50": 22700,
+        "p95": 129600
+      },
       "contaminationReasons": [
         "quality gate: no-reply rate 2.6% exceeds gate 2.0% (2/78)"
       ],
@@ -469,10 +499,11 @@
     {
       "modelProfile": "gpt55",
       "modelName": "GPT-5.5",
+      "thinkingLevel": "low",
       "lane": "headline",
       "runStatus": "ready",
       "runId": "20260427-190928-853",
-      "summaryPath": "/tmp/fluso-bench-synth/summaries/gpt55.summary.json",
+      "summaryPath": "agents/dev-harness/data/hardened-rerun-20260427/gpt55/eval-results/run-20260427-190928-853/summary.json",
       "benchmarkValidity": "valid",
       "comparable": true,
       "advisoryOnly": false,
@@ -496,6 +527,15 @@
       "totalToolErrors": 33,
       "averageTimeToFirstReplyMs": 24114.97435897436,
       "averageWallTimeMs": 28113.82051282051,
+      "failureModeSummary": {
+        "regularFails": 18,
+        "stuckLoops": 0,
+        "timeoutClass": 0
+      },
+      "wallTimePercentilesMs": {
+        "p50": 21300,
+        "p95": 75800
+      },
       "contaminationReasons": [],
       "rootCauseBreakdown": {
         "pass": 60,
@@ -617,11 +657,12 @@
     },
     {
       "modelProfile": "gemini31-pro",
-      "modelName": "Gemini 3.1 Pro",
+      "modelName": "Gemini 3.1 Pro Preview",
+      "thinkingLevel": "medium",
       "lane": "headline",
       "runStatus": "ready",
       "runId": "20260427-172304-020",
-      "summaryPath": "/tmp/fluso-bench-synth/summaries/gemini31-pro.summary.json",
+      "summaryPath": "agents/dev-harness/data/hardened-rerun-20260427/gemini31-pro/eval-results/run-20260427-172304-020/summary.json",
       "benchmarkValidity": "valid",
       "comparable": true,
       "advisoryOnly": false,
@@ -645,6 +686,15 @@
       "totalToolErrors": 68,
       "averageTimeToFirstReplyMs": 36775.05194805195,
       "averageWallTimeMs": 43723.52564102564,
+      "failureModeSummary": {
+        "regularFails": 10,
+        "stuckLoops": 3,
+        "timeoutClass": 1
+      },
+      "wallTimePercentilesMs": {
+        "p50": 31300,
+        "p95": 120000
+      },
       "contaminationReasons": [],
       "rootCauseBreakdown": {
         "pass": 65,
@@ -770,11 +820,12 @@
     {
       "modelProfile": "deepseek-v4-pro",
       "modelName": "DeepSeek V4 Pro",
+      "thinkingLevel": "low",
       "lane": "headline",
       "runStatus": "ready",
       "runId": "20260427-223008-886",
-      "summaryPath": "/tmp/fluso-bench-synth/summaries/deepseek-v4-pro.summary.json",
-      "benchmarkValidity": "valid",
+      "summaryPath": "agents/dev-harness/data/hardened-rerun-20260427/deepseek-v4-pro-clean/eval-results/run-20260427-223008-886/summary.json",
+      "benchmarkValidity": "invalid",
       "comparable": true,
       "advisoryOnly": false,
       "comparabilityWarnings": [],
@@ -797,6 +848,15 @@
       "totalToolErrors": 53,
       "averageTimeToFirstReplyMs": 83686.28947368421,
       "averageWallTimeMs": 93420.6282051282,
+      "failureModeSummary": {
+        "regularFails": 4,
+        "stuckLoops": 3,
+        "timeoutClass": 6
+      },
+      "wallTimePercentilesMs": {
+        "p50": 53500,
+        "p95": 354900
+      },
       "contaminationReasons": [
         "quality gate: timeout rate 7.7% exceeds gate 5.0% (6/78)",
         "quality gate: no-reply rate 2.6% exceeds gate 2.0% (2/78)"
@@ -2112,7 +2172,21 @@
       "deepseek-v4-pro reported non-invalidating contamination: quality gate: timeout rate 7.7% exceeds gate 5.0% (6/78); quality gate: no-reply rate 2.6% exceeds gate 2.0% (2/78)"
     ],
     "notes": [
-      "Headline charts and claims are derived strictly from the clean comparable set."
+      "Headline charts and claims are derived strictly from the comparable headline set.",
+      "Benchmark-validity gates remain visible as failure-mode signals, but this release treats them as informational after apples-to-apples retries."
+    ],
+    "policyDecisions": [
+      {
+        "id": "benchmark-validity",
+        "mode": "informational",
+        "applied": true,
+        "affectedModels": [
+          "glm51-openrouter",
+          "claude-sonnet-46",
+          "deepseek-v4-pro"
+        ],
+        "rationale": "After apples-to-apples all-non-pass retries, persistent timeout/no-reply/stuck-loop gates are treated as workload-specific failure modes rather than release-disqualifying contamination for this dev-harness Tier 2 release."
+      }
     ]
   },
   "publishable": true,
@@ -2131,7 +2205,7 @@
     },
     {
       "id": "cost-vs-quality",
-      "claim": "Kimi K2.6 is the lowest-cost clean run, but DeepSeek V4 Pro still leads the release on overall task completion.",
+      "claim": "Kimi K2.6 is the lowest-cost comparable run, but DeepSeek V4 Pro still leads this release on overall task completion.",
       "evidenceSource": [
         "manifest.headlineModels.kimi-k26.totalCostUsd",
         "manifest.headlineModels.deepseek-v4-pro.passRate"
@@ -2145,7 +2219,7 @@
     },
     {
       "id": "latency-leader",
-      "claim": "GPT-5.5 reaches a first user-visible reply faster than the rest of the clean set, but fastest does not automatically mean highest completion.",
+      "claim": "GPT-5.5 reaches a first user-visible reply faster than the rest of the comparable set, but lower latency does not automatically mean higher completion.",
       "evidenceSource": [
         "manifest.headlineModels.gpt55.averageTimeToFirstReplyMs"
       ],
